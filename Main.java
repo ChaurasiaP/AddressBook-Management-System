@@ -1,6 +1,12 @@
-// UC 1
+import java.util.Scanner;
+
+// UC 2
 public class Main {
     public static void main(String[] args) {
-        System.out.println("WELCOME TO ADDRESS BOOK MANAGEMENT SYSTEM");
+        Scanner sc = new Scanner(System.in);
+        ContactInput contactInputObj = new ContactInput();
+
+        System.out.println("Welcome to addressbook");
+        contactInputObj.addContact();
     }
 }
