@@ -1,3 +1,4 @@
+// UC 1
 public class ContactDetails {
     private String first_name;
     private String last_name;
