@@ -43,7 +43,6 @@ public class ContactInput {
             ContactList.setContacts(contactDetailsList);
         }
     }
-
     // to display all the contacts using arraylist contactDetailsList which take values from contacts
     public void displayContacts() {
         if (contactDetailsList.isEmpty()) {

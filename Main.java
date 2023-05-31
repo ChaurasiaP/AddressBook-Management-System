@@ -12,7 +12,7 @@ public class Main {
         while (!exit) {
 
             System.out.println("\nEnter choice: ");
-            System.out.println("1. Add contact " + "\n2. Display Contact List " + "\n3. Exit");
+            System.out.println("1.Add contact " + "\n2. Display Contact List " + "\n3. Edit"+"\n4. Exit");
 
             int choice = sc.nextInt();
             switch (choice) {
@@ -26,6 +26,10 @@ public class Main {
 
                 case 3:
                     contactInputObj.editContact();
+                    break;
+                case 4:
+                    System.out.println("Exiting....");
+                    exit = true;
                     break;
                 default:
                     System.out.println("Enter valid option");
