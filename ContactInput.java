@@ -1,7 +1,7 @@
 import java.util.List;
 import java.util.Scanner;
 
-// UC 3
+// UC 4
 public class ContactInput {
     public static List<ContactDetails> contactDetailsList = ContactList.getContacts();
     public static Scanner sc = new Scanner(System.in);
@@ -114,6 +114,21 @@ public class ContactInput {
         }
         if (fonud.equals("no")) {
             System.out.println("Contact not found");
+        }
+    }
+    // to delete a contact using their first name and last name
+    public void deleteContact(){
+        System.out.println("Enter Contact's First Name and Last Name which you want to Delete");
+        System.out.println("First Name: ");
+        String fname = sc.nextLine();
+        System.out.println("Last Name: ");
+        String lname = sc.nextLine();
+
+        for(ContactDetails contact : contactDetailsList){
+            if(contact.getFirst_name().compareToIgnoreCase(fname) == 0 && contact.getLast_name().compareToIgnoreCase(lname) == 0){
+                contactDetailsList.remove(contact);
+                System.out.println("Contact deleted!!");
+            }
         }
     }
 }

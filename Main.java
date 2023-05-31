@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-// UC 3
+// UC 4
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -12,7 +12,7 @@ public class Main {
         while (!exit) {
 
             System.out.println("\nEnter choice: ");
-            System.out.println("1.Add contact " + "\n2. Display Contact List " + "\n3. Edit"+"\n4. Exit");
+            System.out.println("1. Add contact " + "\n2. Display Contact List " + "\n3. Edit"+"\n4. Delete Contact"+"\n5. Exit");
 
             int choice = sc.nextInt();
             switch (choice) {
@@ -27,7 +27,12 @@ public class Main {
                 case 3:
                     contactInputObj.editContact();
                     break;
+
                 case 4:
+                    contactInputObj.deleteContact();
+                    break;
+
+                case 5:
                     System.out.println("Exiting....");
                     exit = true;
                     break;
