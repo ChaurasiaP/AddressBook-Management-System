@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-// UC 4
+// UC 5
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);

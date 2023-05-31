@@ -1,7 +1,7 @@
 import java.util.List;
 import java.util.Scanner;
 
-// UC 4
+// UC 6
 public class ContactInput {
     public static List<ContactDetails> contactDetailsList = ContactList.getContacts();
     public static Scanner sc = new Scanner(System.in);
