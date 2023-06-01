@@ -63,4 +63,9 @@ public class ContactDetails {
     public void setEmail(String email) {
         this.email = email;
     }
+        @Override
+    public String toString() {
+        return "\nAddress Book Entry: \nFrist Name: " + first_name + " Last Name: " + last_name + "\nAddress: "
+                + address + " City Name: " + city + " Zip Code: " + zip_code + "\nPhone Number: " + phone_number + " Email: " + email;
+    }
 }
